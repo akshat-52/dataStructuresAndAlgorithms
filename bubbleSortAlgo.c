@@ -40,3 +40,13 @@ void printArray(int array[], int size){
     }
     printf("\n");
 }
+
+int main(){
+    int data[] = {-2, 45, 0, 11 ,-9};
+
+    //find the array's length
+    int size=sizeof(data)/sizeof(data[0]);
+    bubbleSort(data, size);
+    printf("Sorted Array in Ascending Order:\n");
+    printArray(data, size);
+}
